@@ -1,0 +1,570 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 120px;
+    background-color: black;
+    font-family: "Battambang", system-ui;
+}
+.container .header{
+    width: 75%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: auto;
+}
+.header .logo{
+    width: 15%;
+    height: 100%;
+    /* background-color: brown;  */
+    float: left; 
+}
+.logo img{
+    height: 100%;
+    padding: 25px 10px;
+}
+.header .ads{
+    width: 85%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    float: left;
+}
+.ads img{
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+}
+.menu{
+    width: 100%;
+     overflow: hidden; 
+    /* height: 80px; */
+    background-color: red;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.menu .text{
+    width: 75%;
+    height: 100%;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.text ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.text ul li{
+    float: left;
+}
+.text ul li a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.text ul li a:hover{
+    opacity: 2;
+    transform: scale(120% , 120%);
+}
+.buttom{
+    width: 75%;
+    margin: auto;
+    /* background-color: purple; */
+    overflow: hidden;
+    margin-top: 10px;
+}
+.buttom .box_buttom1{
+    width: 75%;
+    height: 500px;
+    /* background-color: blue; */
+    float: left;
+}
+.buttom .box_buttom2{
+    width: 24%;
+    height: 500px;
+    /* background-color: pink; */
+    float: left;
+    margin-left: 10px;
+}
+.box_buttom1 .box_header{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+    
+}
+.box_header .photo1{
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-image: url(img/photo1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+    
+}
+.box_header .photo1 .title{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    display: flex;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.box_header .photo2 .title{
+    width: 120px;
+    height: 30px;
+    background-color:chartreuse;
+    color: white;
+    display: flex;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.box_footer .photo3 .title{
+    width: 100px;
+    height: 30px;
+    background-color:chocolate;
+    color: white;
+    display: flex;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.box_footer .photo4 .title{
+    width: 100px;
+    height: 30px;
+    background-color:deeppink;
+    color: white;
+    display: flex;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.title p{
+    transform: translateX(-10px);
+}
+.photo1 h2{
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+    text-shadow: 3px 3px 3px black;
+    transform: translateY(100px);
+    transition: 0.5s;
+}
+.photo1 h2 span{
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.photo1:hover h2{
+    transform:translateY(60px);
+    color: red;
+    
+}
+.photo1:hover h2 span{
+    opacity: 1;
+}
+.box_header .photo2{
+    width: 40%;
+    height: 100%;
+    background-image: url(img/photo2.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    
+}
+.photo2 h2{
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+    text-shadow: 3px 3px 3px black;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.photo2 h2 span{
+    font-size: 14px;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+    margin-top: -10px;
+}
+.photo2:hover h2{
+    transform:translateY(20px);
+    color: red;
+    
+}
+.photo2:hover h2 span{
+    opacity: 1;
+}
+.box_buttom1 .box_footer{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+    
+}
+.box_footer .photo3{
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-image: url('img/photo3.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.photo3 h2{
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+    text-shadow: 3px 3px 3px black;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.photo3 h2 span{
+    font-size: 14px;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.photo3:hover h2{
+    transform:translateY(20px);
+    color: red;
+    
+}
+.photo3:hover h2 span{
+    opacity: 1;
+}
+.box_footer .photo4{
+    width: 40%;
+    height: 100%;
+    background-image: url('img/photo4.png');
+    background-position: center;
+    background-size: cover;
+    float: left;
+    
+}
+.photo4 h2{
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+    text-shadow: 3px 3px 3px black;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.photo4 h2 span{
+    font-size: 14px;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+    line-height: ;
+}
+.photo4:hover h2{
+    transform:translateY(20px);
+    color: red;
+    
+}
+.photo4:hover h2 span{
+    opacity: 1;
+}
+.box_buttom2 .box1{
+    width: 100%;
+    height: 49.5%;
+    background-image: url('img/ads-krud.png');
+    background-position: center;
+    background-size: cover;
+}
+.box_buttom2 .box2{
+    width: 100%;
+    height: 49.5%;
+    background-image: url('img/ads-underworld.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+.box-menu{
+    width: 75%;
+    overflow: hidden;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 0px;
+    border: 2px solid gray;
+}
+.box-header{
+    width: 75%;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+    border-bottom: 3px solid red;
+}
+.box-header .box-text{
+    width: 13%;
+    height: 100%;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.box-text p{
+    transform: translateX(-20px);
+}
+.box-first{
+    width: 100%;
+    height: 400px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.box-second{
+    width: 100%;
+    height: 400px;
+    /* background-color: blue; */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.box-first .box{
+    width: 33%;
+    height: 100%;
+    /* background-color: brown; */
+    
+
+}
+.box .picture{
+    width: 100%;
+    height: 80%;
+}
+.box .picture img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.box .picture:hover{
+    transform:; 
+}
+.box .letter{
+    width: 100%;
+    height: 20%;
+    
+}
+.box .letter p{
+    font-size: 18px;
+    font-family: "Battambang", system-ui;
+    transform: translateY(-40px);
+    font-weight: bold;
+    line-height: 25px;
+}
+.box-second .second-one{
+    width: 70%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.second-one .second-box{
+    width: 24%;
+    height: 47%;
+    /* background-color: green; */
+    float: left;
+}
+.second-box .picture-edit{
+    width: 100%;
+    height: 50%;
+
+}
+.second-box .picture-edit img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second-box .des{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.second-box .des p{
+    line-height: 20px;
+}
+.icon-corner{
+    width: 75%;
+    height: 50px;
+    /* background-color: red; */
+    margin: auto;
+    border-bottom: 3px solid red;
+    margin-top: 30px;
+    
+}
+.icon-corner .box1-corner{
+    width: 13%;
+    height: 100%;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.box-corner{
+    width: 75%;
+    overflow: hidden;
+    background-color: white;
+    padding: 30px;
+    padding-bottom: 0px;
+    margin: auto;
+    border: 2px solid gray;
+    box-shadow: 2px 2px 2px gray;
+}
+.box-corner .box-in{
+    width: 30%;
+    height: 400px;
+    background-color: rgb(90, 90, 246);
+    float: left;
+    margin-bottom: 20px;
+}
+.box-corner .box-out{
+    width: 68%;
+    height: 400px;
+    margin-left: 20px;
+    /* background-color: brown; */
+    float: left;
+}
+.box-in .picture{
+    width: 100%;
+    height: 50%;
+    
+}
+.box-in .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-in .des{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.box-in .des p{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+.box-out{
+    width: 70%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box-out .second-box{
+    width: 24%;
+    height: 47%;
+    /* background-color: green; */
+    float: left;
+}
+.box-out .second-box .des p{
+    line-height: 20px;
+}
+.footer-new{
+    height: 300px;
+    background-color: black;
+    margin-top: 80px;
+}
+.footer-new .footer-box{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+.footer-box .box-news{
+    width: 30%;
+    height: 100%;
+    float: left;
+
+}
+.footer-box .box-news:nth-child(2){
+    width: 70%;
+    height: 100%;
+}
+.box-news .picture-footer{
+    width: 100%;
+    height: 40%;
+}
+.picture-footer img{
+    padding-top: 30px;
+    height: 80%;
+}
+.footer-text p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.box-news .box-link{
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding-top: 40px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.box-link:nth-child(2){
+    width:40%;
+    height: 100%;
+}
+.box-link .logo-footer{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-top: 15px;
+}
+.logo-footer img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.box-link {
+    padding-left: 40px;
+}
+.box-link .fa-brands{
+    padding-top: 30px;
+    font-size: 25px;
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.592);
+}
+.box-link .text p{
+    padding-top: 30px;
+    font-size: 15px;
+}

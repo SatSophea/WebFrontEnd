@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 120px;
+    background-color: black;
+    font-family: "Battambang", system-ui;
+}
+.container .header{
+    width: 75%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: auto;
+}
+.header .logo{
+    width: 15%;
+    height: 100%;
+    /* background-color: brown;  */
+    float: left; 
+}
+.logo img{
+    height: 100%;
+    padding: 25px 10px;
+}
+.header .ads{
+    width: 85%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    float: left;
+}
+.ads img{
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+}
+.body-of-container{
+    width: 75%;
+    overflow: hidden;
+    background-color: blue;
+    margin: auto;
+}
+.menu{
+    width: 100%;
+     overflow: hidden; 
+    /* height: 80px; */
+    background-color: rgb(247, 63, 63);
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.menu .text{
+    width: 75%;
+    height: 100%;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.text ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.text ul li{
+    float: left;
+}
+.text ul li a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.text ul li a:hover{
+    opacity: 1;
+    transform: scale(120% , 120%);
+}
+.icon-corner{
+    width: 65%;
+    height: 50px;
+    /* background-color: red; */
+    border-bottom: 3px solid rgb(241, 89, 89);
+    margin-top: 30px;
+}
+.icon-corner .box1-corner{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(239, 113, 134);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.new-box-contain{
+    width: 65%;
+    overflow: hidden;
+    float: left;
+}
+.body-of-container .box-right{
+    width: 35%;
+    overflow: hidden; 
+    height: 500px;
+    background-color: blueviolet;
+}
+.box-right .box-above{
+    width: 100%;
+    height: 250px;
+    background-color: pink;
+}
+.box-above .picture-ads{
+    width: 92%;
+    height: 100%;
+    float: right;
+}
+.box-above .picture-ads img{
+    width: 100%;
+    height: 100%;
+}
+.new-box-contain .box-contain{
+    width: 44%;
+    height: 250px;
+    margin: 20px;
+    float: left;
+}
+.box-contain .news-for-box-header{
+    width: 100%;
+    height: 100%;
+}
+.box-contain .news-for-box-header .picture{
+    width: 100%;
+    height: 70%;
+}
+.box-contain .news-for-box-header .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news-for-box-header .des{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    
+}
+.news-for-box-header .des p{
+    font-size: 17px;
+    margin-top: 5px;
+}
+.new-box-contain .box-content-buttom{
+    width: 100%;
+    overflow: hidden;
+    /* background-color: brown; */
+}
+.box-content-buttom .box-buttom{
+    width: 100%;
+    height: 150px;
+    /* background-color: chocolate; */
+    margin-top: 15px;
+}
+.box-buttom .pic{
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
+    float: left;
+}
+.box-buttom .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-buttom .description{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.box-buttom .description p{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.footer-new{
+    height: 300px;
+    background-color: black;
+    margin-top: 60px;
+}
+.footer-new .footer-box{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+.footer-box .box-news{
+    width: 30%;
+    height: 100%;
+    float: left;
+
+}
+.footer-box .box-news:nth-child(2){
+    width: 70%;
+    height: 100%;
+}
+.box-news .picture-footer{
+    width: 100%;
+    height: 40%;
+}
+.picture-footer img{
+    padding-top: 30px;
+    height: 80%;
+}
+.footer-text p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.box-news .box-link{
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding-top: 40px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.box-link:nth-child(2){
+    width:40%;
+    height: 100%;
+}
+.box-link .logo-footer{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-top: 15px;
+}
+.logo-footer img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.box-link {
+    padding-left: 40px;
+}
+.box-link .fa-brands{
+    padding-top: 30px;
+    font-size: 25px;
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.592);
+}
+.box-link .text p{
+    padding-top: 30px;
+    font-size: 15px;
+}
+
